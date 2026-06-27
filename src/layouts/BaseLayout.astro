@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+import favicon from "../../assets/domonor-icon.png";
+import type { Locale } from "../content/site";
+import { locales, siteContent } from "../content/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const content = siteContent[locale];
+const canonical = new URL(locales[locale].path, Astro.site);
+---
+
+<!doctype html>
+<html lang={locales[locale].htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={content.meta.description} />
+    <meta name="theme-color" content="#f7f5f0" />
+    <link rel="icon" type="image/png" href={favicon.src} />
+    <link rel="apple-touch-icon" href={favicon.src} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={new URL(locales.en.path, Astro.site)} />
+    <link rel="alternate" hreflang="th" href={new URL(locales.th.path, Astro.site)} />
+    <title>{content.meta.title}</title>
+  </head>
+  <body class={`locale-${locale}`}>
+    <slot />
+  </body>
+</html>
