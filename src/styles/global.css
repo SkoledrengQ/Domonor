@@ -15,7 +15,7 @@
   --dark: #090b0f;
   --dark-soft: #111821;
   --light: #fffaf1;
-  --teal: #0f8f88;
+  --signal: #ff5c39;
   --coral: #d96a42;
   --gold: #c9902f;
   --blue: #246b9f;
@@ -51,7 +51,7 @@ body::before {
   z-index: 100;
   height: 3px;
   content: "";
-  background: linear-gradient(90deg, var(--teal), var(--gold), var(--coral));
+  background: linear-gradient(90deg, var(--signal), var(--gold), var(--coral));
   transform: scaleX(var(--scroll-progress));
   transform-origin: left;
 }
@@ -115,14 +115,23 @@ img {
 .header-logo {
   display: inline-flex;
   align-items: center;
-  width: 176px;
+  gap: 0.7rem;
+  width: 258px;
   min-width: 0;
 }
 
 .header-logo img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 38px;
   object-fit: contain;
+}
+
+.header-logo img:first-child {
+  height: 42px;
+}
+
+.header-logo img:last-child {
+  max-width: 142px;
 }
 
 .header-nav {
@@ -156,7 +165,7 @@ img {
 }
 
 .header-nav .language-link {
-  color: #9ee0d9;
+  color: var(--signal);
 }
 
 .header-nav .header-cta {
@@ -246,7 +255,7 @@ img {
 .eyebrow,
 .intro-kicker {
   margin: 0 0 1rem;
-  color: var(--teal);
+  color: var(--signal);
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -254,7 +263,7 @@ img {
 }
 
 .hero-section .eyebrow {
-  color: #9ee0d9;
+  color: var(--signal);
 }
 
 h1,
@@ -553,7 +562,7 @@ h3 {
   aspect-ratio: 1;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 42% 40%, rgba(158, 224, 217, 0.36), transparent 28%),
+    radial-gradient(circle at 42% 40%, rgba(255, 92, 57, 0.36), transparent 28%),
     radial-gradient(circle at 66% 58%, rgba(217, 106, 66, 0.24), transparent 32%),
     radial-gradient(circle, rgba(255, 250, 241, 0.08), transparent 62%);
   filter: blur(18px);
@@ -563,7 +572,7 @@ h3 {
 
 .partner-copy .eyebrow,
 .contact-copy .eyebrow {
-  color: #9ee0d9;
+  color: var(--signal);
 }
 
 .partner-copy p {
@@ -654,7 +663,7 @@ h3 {
 .founder-email {
   display: inline-flex;
   margin-bottom: 1.35rem;
-  color: var(--teal);
+  color: var(--signal);
   font-weight: 820;
   text-decoration: none;
 }
@@ -702,7 +711,7 @@ h3 {
   aspect-ratio: 1;
   content: "";
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(158, 224, 217, 0.18), transparent 64%);
+  background: radial-gradient(circle, rgba(255, 92, 57, 0.18), transparent 64%);
   pointer-events: none;
 }
 
@@ -774,9 +783,9 @@ h3 {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: #9ee0d9;
+  border-color: var(--signal);
   background: rgba(255, 255, 255, 0.11);
-  box-shadow: 0 0 0 3px rgba(158, 224, 217, 0.12);
+  box-shadow: 0 0 0 3px rgba(255, 92, 57, 0.12);
 }
 
 .site-footer {
@@ -833,7 +842,19 @@ h3 {
   }
 
   .header-logo {
-    width: 148px;
+    width: 216px;
+  }
+
+  .header-logo img {
+    height: 33px;
+  }
+
+  .header-logo img:first-child {
+    height: 36px;
+  }
+
+  .header-logo img:last-child {
+    max-width: 118px;
   }
 
   .menu-button {
@@ -908,7 +929,20 @@ h3 {
   }
 
   .header-logo {
-    width: 126px;
+    width: 184px;
+    gap: 0.5rem;
+  }
+
+  .header-logo img {
+    height: 29px;
+  }
+
+  .header-logo img:first-child {
+    height: 32px;
+  }
+
+  .header-logo img:last-child {
+    max-width: 98px;
   }
 
   .hero-inner,

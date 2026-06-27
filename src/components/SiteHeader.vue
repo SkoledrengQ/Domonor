@@ -13,7 +13,7 @@ defineProps<{
     href: string;
   };
   contactLabel: string;
-  logoSrc: string;
+  logoSources: string[];
 }>();
 
 const isOpen = ref(false);
@@ -26,7 +26,7 @@ const close = () => {
 <template>
   <header class="site-header">
     <a class="header-logo" href="#top" aria-label="Domonor home" @click="close">
-      <img :src="logoSrc" alt="Domonor" />
+      <img v-for="(logoSrc, index) in logoSources" :key="logoSrc" :src="logoSrc" :alt="index === 0 ? 'Domonor' : ''" />
     </a>
 
     <button

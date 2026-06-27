@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import heroImage from "../../assets/domonor-hero.png";
-import logoImage from "../../assets/domonor-logo-title.png";
+import logoTwoA from "../../assets/2a.svg";
+import logoOneB from "../../assets/1b.svg";
 import portraitImage from "../../assets/Portrait.png";
 import { siteContent, type Locale } from "../content/site";
 import ContactForm from "./ContactForm.vue";
@@ -17,7 +18,7 @@ const year = new Date().getFullYear();
 ---
 
 <div class="site-shell" data-locale={locale}>
-  <SiteHeader client:load nav={t.nav} language={t.language} contactLabel={t.hero.primary} logoSrc={logoImage.src} />
+  <SiteHeader client:load nav={t.nav} language={t.language} contactLabel={t.hero.primary} logoSources={[logoTwoA.src, logoOneB.src]} />
 
   <main id="top">
     <section class="hero-section" aria-labelledby="hero-title">
