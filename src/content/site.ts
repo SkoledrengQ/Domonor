@@ -64,7 +64,7 @@ export const siteContent = {
     },
     partner: {
       eyebrow: "Partner with Domonor",
-      title: "Looking for someone to solve IT challenges inside your business?",
+      title: "Looking for a software partner to solve IT challenges inside your business?",
       body:
         "If your company needs a practical technology partner, Domonor can help clarify the problem, shape the right solution, and build software that supports the way your business actually works.",
       cta: "Go to contact",
@@ -81,7 +81,7 @@ export const siteContent = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Tell me what you want to improve.",
+      title: "Tell us what you want to improve.",
       body:
         "If your business needs a clearer system, custom software, automation, or a practical technology partner, start here.",
       email: "hello@domonor.net",
@@ -156,7 +156,7 @@ export const siteContent = {
     },
     partner: {
       eyebrow: "ร่วมงานกับ Domonor",
-      title: "กำลังมองหาคนช่วยแก้ปัญหาไอทีในธุรกิจของคุณอยู่ไหม?",
+      title: "กำลังมองหาพาร์ตเนอร์ซอฟต์แวร์เพื่อแก้ปัญหาไอทีในธุรกิจของคุณอยู่ไหม?",
       body:
         "หากบริษัทของคุณต้องการพาร์ตเนอร์ด้านเทคโนโลยีที่ใช้งานได้จริง Domonor สามารถช่วยทำให้ปัญหาชัดขึ้น วางรูปแบบโซลูชัน และสร้างซอฟต์แวร์ที่สนับสนุนวิธีทำงานของธุรกิจคุณจริงๆ",
       cta: "ไปที่ติดต่อ",
@@ -173,7 +173,7 @@ export const siteContent = {
     },
     contact: {
       eyebrow: "ติดต่อ",
-      title: "บอกฉันว่าคุณอยากปรับปรุงอะไร",
+      title: "บอกเราว่าคุณอยากปรับปรุงอะไร",
       body:
         "หากธุรกิจของคุณต้องการระบบที่ชัดขึ้น ซอฟต์แวร์เฉพาะทาง ออโตเมชัน หรือพาร์ตเนอร์ด้านเทคโนโลยีที่ใช้งานได้จริง เริ่มต้นตรงนี้ได้เลย",
       email: "hello@domonor.net",
