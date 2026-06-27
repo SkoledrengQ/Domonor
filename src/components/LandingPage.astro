@@ -24,6 +24,7 @@ const year = new Date().getFullYear();
       <div class="hero-media" aria-hidden="true">
         <Image src={heroImage} alt="" loading="eager" widths={[900, 1400, 1800]} sizes="100vw" />
       </div>
+      <div class="hero-light" aria-hidden="true"></div>
       <div class="hero-scrim"></div>
       <div class="hero-inner">
         <div class="hero-copy reveal">
@@ -67,6 +68,7 @@ const year = new Date().getFullYear();
 
     <section class="partner-section" id="partner" aria-labelledby="partner-title">
       <div class="partner-sticky">
+        <div class="partner-orb" aria-hidden="true"></div>
         <div class="partner-copy reveal">
           <p class="eyebrow">{t.partner.eyebrow}</p>
           <h2 id="partner-title">{t.partner.title}</h2>
@@ -131,7 +133,10 @@ const year = new Date().getFullYear();
   const updateScroll = () => {
     const max = document.documentElement.scrollHeight - window.innerHeight;
     const progress = max > 0 ? window.scrollY / max : 0;
+    const heroHeight = document.querySelector<HTMLElement>(".hero-section")?.offsetHeight ?? window.innerHeight;
+    const heroProgress = Math.min(Math.max(window.scrollY / heroHeight, 0), 1);
     document.documentElement.style.setProperty("--scroll-progress", progress.toFixed(4));
+    document.documentElement.style.setProperty("--hero-progress", heroProgress.toFixed(4));
   };
 
   updateScroll();

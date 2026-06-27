@@ -10,7 +10,7 @@ export const siteContent = {
     meta: {
       title: "Domonor | Software Solutions",
       description:
-        "Domonor is a modern software solutions partner by Dominique Desmond Borchert, focused on practical IT systems, custom software, automation, and technology consulting.",
+        "Domonor is a modern software solutions company focused on practical IT systems, custom software, automation, and technology consulting.",
     },
     nav: [
       { label: "Solutions", href: "#solutions" },
@@ -102,7 +102,7 @@ export const siteContent = {
     meta: {
       title: "Domonor | โซลูชันซอฟต์แวร์",
       description:
-        "Domonor คือพาร์ตเนอร์โซลูชันซอฟต์แวร์สมัยใหม่โดย Dominique Desmond Borchert สำหรับระบบไอที ซอฟต์แวร์เฉพาะทาง ออโตเมชัน และที่ปรึกษาด้านเทคโนโลยี",
+        "Domonor คือบริษัทโซลูชันซอฟต์แวร์สมัยใหม่สำหรับระบบไอที ซอฟต์แวร์เฉพาะทาง ออโตเมชัน และที่ปรึกษาด้านเทคโนโลยี",
     },
     nav: [
       { label: "โซลูชัน", href: "#solutions" },
@@ -118,7 +118,7 @@ export const siteContent = {
       eyebrow: "",
       headline: "ซอฟต์แวร์โซลูชันสำหรับธุรกิจที่พร้อมทำงานอย่างชาญฉลาดขึ้น",
       subline:
-        "ซอฟต์แวร์เฉพาะทาง ระบบธุรกิจ ออโตเมชัน และที่ปรึกษาด้านเทคโนโลยีสำหรับบริษัทที่ต้องการวิธีทำงานที่ดีขึ้น",
+        "ซอฟต์แวร์เฉพาะทาง ระบบธุรกิจ ออโตเมชัน และที่ปรึกษาด้านเทคโนโลยีสำหรับบริษัทที่ต้องการเวิร์กโฟลว์ที่ดีขึ้น",
       primary: "คุยเรื่องโปรเจกต์",
       secondary: "ดูโซลูชัน",
       status: "",
@@ -187,6 +187,6 @@ export const siteContent = {
       },
       options: ["ซอฟต์แวร์เฉพาะทาง", "ออโตเมชัน", "เว็บไซต์หรือแอปพลิเคชัน", "ที่ปรึกษาด้านเทคนิค", "อื่นๆ"],
     },
-    footer: "Domonor คือแนวคิดบริษัทซอฟต์แวร์ระยะเริ่มต้นโดย Dominique Desmond Borchert",
+    footer: "Domonor คือแนวคิดบริษัทโซลูชันซอฟต์แวร์ระยะเริ่มต้น",
   },
 } as const;
